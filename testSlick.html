@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+</head>
+<body>
+<div class="slider">
+	<ul class="slick-box">
+		<li><img src="images/01-600x300.jpg" alt=""/></li>
+		<li><img src="images/02-600x300.jpg" alt=""/></li>
+		<li><img src="images/03-600x300.jpg" alt=""/></li>
+	</ul>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('.slick-box').slick({
+		dots: true,
+		autoplay:true,
+		autoplaySpeed:5000
+	});
+});
+</script>
+<style>
+.slick-slide img{
+  max-width: 100%;
+  height:auto;
+}
+ul{
+  padding: 0;
+}
+.slider{
+	padding: 0 50px;
+	background-color: #888;
+}
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #ddd;
+}
+</style>
+</body>
+</html>
